@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors');
 
 this.app = express();
-const port = 8999;
+const port = 80;
 
 this.app.use(bodyParser.text({limit:"50mb",type:'text/plain'}));
 this.app.use(bodyParser.text({limit: "50mb", type: 'application/atom+xml'}));
